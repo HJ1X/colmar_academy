@@ -41,7 +41,7 @@ h1 {
 
 h2 {
     font-family: 'Kumbh Sans';
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
@@ -181,3 +181,84 @@ header, header > .flex-container {
         font-size: 3rem;
     }
 }
+
+/* ------------------ stories -------------------- */
+
+.main-information {
+    display: none;
+}
+
+.stories > .flex-container {
+    padding: 16px 16px 0 16px;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.stories .story {
+    width: 100%;
+}
+
+.stories .image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.stories picture img {
+    width: 100%;
+    height: auto;
+}
+
+.story .information {
+    padding: 32px 16px;
+}
+
+.story .information h3 {
+    padding-bottom: 12px;
+    color: rgb(74, 74, 74)
+}
+
+.story .information h4 {
+    padding-bottom: 12px;
+    color: rgb(155, 155, 155);
+}
+
+.story .information p {
+    color: rgb(74,144,226);
+    font-family: 'Kumbh Sans';
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .stories .main-information {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 24px;
+        align-items: flex-start;
+    }
+    .stories .main-information h2 {
+        padding: 32px 0 24px 0;
+        color: rgb(74, 74, 74);
+    }
+    .stories .main-information p {
+        padding-bottom: 32px; 
+        color: rgb(74, 74, 74);
+        font-family: 'Montserrat';
+    }
+    .stories .author {
+        font-family: 'Roboto';
+        color: rgb(74, 74, 74);
+    }
+    .stories .flex-container {
+        align-items: flex-start;
+    }
+    .stories .story {
+        display: flex;
+    }
+    .stories .story .image-container {
+        width: 35%;
+    }
+} 
