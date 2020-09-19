@@ -1,4 +1,4 @@
-htnl {
+html {
     font-size: 16px;
 }
 
@@ -7,6 +7,57 @@ htnl {
     justify-content: center;
     align-items: center;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+.colmar {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(74, 74, 74);
+    padding-right: 0.1rem;
+}
+
+.academy {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(155, 155, 155);
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+h2 {
+    font-family: 'Kumbh Sans';
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'Kumbh Sans';
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Kumbh Sans';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* ---------------- header --------------- */
 
 header, header > .flex-container {
     height: 64px;
@@ -48,8 +99,85 @@ header, header > .flex-container {
     }
     .header-desktop nav span {
         padding-right: 16px;
+        font-family: 'Roboto';
+        font-weight: 400;
     }
     .header-desktop nav span:last-child {
         padding-right: 0;
+    }
+}
+
+/* --------------- banner ---------------- */
+
+.banner .flex-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(219, 219, 219);
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner .info {
+    padding: 32px 16px;
+    justify-content: flex-start;
+}
+
+.banner .info h1, .banner .info p, .banner .info button {
+    width: 100%;
+}
+
+.banner .info h1 {
+    padding-bottom: 32px;
+    color: rgb(74, 74, 74)
+}
+
+.banner .info p {
+    padding-bottom: 24px;
+    font-size: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: rgb(74, 74, 74);
+}
+
+.banner button {
+    border: none;
+    background-color: rgb(155, 155, 155);
+    padding: 12px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.11rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.banner button:hover {
+    background-color: rgb(94, 93, 93);
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .banner {
+        background-color: rgb(216, 216, 216);
+    }
+    .banner .flex-container {
+        flex-direction: row;
+        padding: 32px 24px;
+        box-sizing: border-box;
+    }
+    .banner img {
+        width: 60%;
+        min-height: 100%;
+        padding-right: 24px;
+    }
+    .banner .info  {
+        flex-direction: column;
+    }
+    .banner .info h1 {
+        font-size: 3rem;
     }
 }
