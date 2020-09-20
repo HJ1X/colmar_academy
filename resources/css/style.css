@@ -93,6 +93,9 @@ header, header > .flex-container {
     .header-desktop .logo {
         height: 32px;
     }
+    .header-desktop .logo img {
+        height: 40px;
+    }
     .header-desktop nav {
         flex-grow: 1;
         text-align: right;
