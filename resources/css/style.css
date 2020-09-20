@@ -238,6 +238,10 @@ header, header > .flex-container {
         flex-direction: column;
         padding: 32px 24px;
         align-items: flex-start;
+        border-right: 1px solid rgb(219, 219, 219);
+    }
+    .stories .main-information img {
+        max-width: 100%;
     }
     .stories .main-information h2 {
         padding: 32px 0 24px 0;
@@ -252,13 +256,32 @@ header, header > .flex-container {
         font-family: 'Roboto';
         color: rgb(74, 74, 74);
     }
-    .stories .flex-container {
+    .stories .side-information {
+        padding: 16px 0;
         align-items: flex-start;
+        justify-content: flex-start;
     }
     .stories .story {
         display: flex;
+        padding: 16px 16px; 
+        align-items: center;
+        transition-duration: 0.4s;
+    }
+    .stories .story:hover {
+        cursor: pointer;
+        background-color: rgb(219, 219, 219);
     }
     .stories .story .image-container {
         width: 35%;
+        height: auto;
+    }
+    .stories .story .img {
+        max-width: 100%;
+        display: block;
+    }
+    .stories .story .information {
+        width: 65%;
+        flex-shrink: 1;
+        padding: 0 16px;
     }
 } 
