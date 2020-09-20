@@ -57,7 +57,7 @@ h4 {
     font-weight: 400;
 }
 
-/* ---------------- header --------------- */
+/* --------------------- header --------------------- */
 
 header, header > .flex-container {
     height: 64px;
@@ -242,6 +242,7 @@ header, header > .flex-container {
         flex-direction: column;
         padding: 32px 24px;
         align-items: flex-start;
+        justify-content: flex-start;
         border-right: 1px solid rgb(219, 219, 219);
     }
     .stories .main-information img {
@@ -279,7 +280,7 @@ header, header > .flex-container {
         width: 35%;
         height: auto;
     }
-    .stories .story .img {
+    .stories .story img {
         max-width: 100%;
         display: block;
     }
@@ -385,6 +386,94 @@ header, header > .flex-container {
     }
     .course-desktop .info h4 {
         padding-bottom: 8px;
+        color: rgb(155, 155, 155);
+    }
+}
+
+/* ------------------ Thesis ------------------ */
+
+.theses h2 {
+    text-align: center;
+    padding: 35px 0 32px 0;
+    display: block;
+}
+
+.theses .side-thesis, .main-thesis h3, .main-thesis p {
+    display: none;
+}
+
+.main-thesis {
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.main-thesis video {
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .thesis .grid-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        border-bottom: 1px solid rgb(219, 219, 219);
+    }
+    .main-thesis h3, .main-thesis p {
+        display: block;
+    }
+    .main-thesis {
+        flex-direction: column;
+        padding: 0 24px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-right: 1px solid rgb(219, 219, 219);
+        border-bottom: none;
+    }
+    .main-thesis h3 {
+        padding: 24px 0;
+        color: rgb(74, 74, 74);
+    }
+    .main-thesis p {
+        padding-bottom: 32px; 
+        color: rgb(74, 74, 74);
+        font-family: 'Montserrat';
+    }
+    .theses .side-thesis {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .theses .thesis {
+        width: 100%;
+        display: flex;
+        padding: 16px 16px; 
+        align-items: center;
+        transition-duration: 0.4s;
+    }
+    .theses .thesis:hover {
+        cursor: pointer;
+        background-color: rgb(219, 219, 219);
+    }
+    .theses .thesis .image-container {
+        width: 35%;
+        height: auto;
+        overflow: hidden;
+    }
+    .theses .thesis img {
+        width: 100%;
+        display: block;
+    }
+    .theses .thesis .information {
+        width: 65%;
+        flex-shrink: 1;
+        padding: 0 16px;
+    }
+    .thesis .information h3 {
+        color: rgb(74, 74, 74);
+        padding-bottom: 12px;
+    }
+    .thesis .information h4 {
         color: rgb(155, 155, 155);
     }
 }
