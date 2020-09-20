@@ -271,6 +271,7 @@ header, header > .flex-container {
         padding: 16px 16px; 
         align-items: center;
         transition-duration: 0.4s;
+        box-sizing: border-box;
     }
     .stories .story:hover {
         cursor: pointer;
@@ -412,7 +413,7 @@ header, header > .flex-container {
 }
 
 @media only screen and (min-width: 800px) {
-    .thesis .grid-container {
+    .theses .grid-container {
         display: grid;
         grid-template-columns: 60% 40%;
         border-bottom: 1px solid rgb(219, 219, 219);
@@ -445,6 +446,7 @@ header, header > .flex-container {
         justify-content: flex-start;
     }
     .theses .thesis {
+        box-sizing: border-box;
         width: 100%;
         display: flex;
         padding: 16px 16px; 
@@ -475,5 +477,35 @@ header, header > .flex-container {
     }
     .thesis .information h4 {
         color: rgb(155, 155, 155);
+    }
+}
+
+/* --------------------- footer --------------------- */
+
+footer .privacy-terms {
+    display: none;
+}
+
+footer .container {
+    padding: 16px;
+    font-family: 'Roboto';
+    color: rgb(155, 155, 155);
+}
+
+@media only screen and (min-height: 800px) {
+    footer .container {
+        display: flex;
+        padding: 16px 24px;
+    }
+    footer .privacy-terms {
+        display: block;
+        flex-grow: 1;
+        text-align: right;
+    }
+    .privacy-terms a {
+        padding-right: 10px;
+    }
+    .privacy-terms a:last-child {
+        padding-right: 0;
     }
 }
