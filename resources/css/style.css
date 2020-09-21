@@ -363,7 +363,7 @@ header, header > .flex-container {
     }
     .courses .course-desktop:hover {
         cursor: pointer;
-        box-shadow: 10px 10px 5px 5px grey;
+        box-shadow: 0px 0px 40px 2px rgb(74, 74, 74);
     }
     .courses .flex-container {
         padding: 0 56px 32px 56px;
